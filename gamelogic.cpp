@@ -50,7 +50,6 @@ void GameLogic::evaluateGuess(const QString &guess, int currentRow)
         }
     }
 
-    // Second pass: Check for partial matches
     for (int i = 0; i < guess.length(); ++i) {
         if (colors[i] != "green" && guessCopy.contains(guess[i])) {
             colors[i] = "yellow";
